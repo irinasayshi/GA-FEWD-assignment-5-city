@@ -14,7 +14,8 @@ $(document).ready(function(){
 	function changeBackground(){
 		event.preventDefault();
 
-		var city = $('#city-type').val();
+		// var city = $('#city-type').val();
+		var city = $.trim($('#city-type').val());
 
 // "New York" or "New York City" or "NYC" make the background of the page nyc.jpg
 // "San Francisco" or "SF" or "Bay Area" make the background of the page sf.jpg
